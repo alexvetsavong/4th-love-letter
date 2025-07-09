@@ -1,0 +1,15 @@
+.navbar {
+    display: flex !important;
+    justify-content: center !important;
+    justify-items: center !important;
+    border-radius: 28px;
+    color: black;
+    background: #181825;
+}
+
+.navbar * {
+    display: inherit !important;
+    margin: 4px 2px;
+    flex-direction: row;
+    vertical-align: middle !important;
+}
