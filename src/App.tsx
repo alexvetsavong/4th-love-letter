@@ -5,17 +5,31 @@ import duckLogo from "/logos/duck.svg";
 import "./App.css";
 
 function Clock() {
-  let cur_time = new Date().toLocaleString();
+  let cur_time = new Date();
   const [time, setTime] = useState(cur_time);
 
   const UpdateTime = () => {
-    cur_time = new Date().toLocaleString();
+    cur_time = new Date();
     setTime(cur_time);
   };
 
   setInterval(UpdateTime, 1000);
 
-  return <div className="clock">{time}</div>;
+  return (
+    <div className="clock">
+      {time.toLocaleDateString("en-US", {
+        month: "2-digit",
+        day: "2-digit",
+        year: "numeric",
+      })}
+      <br></br>
+      {time.toLocaleTimeString("en-US", {
+        hour: "2-digit",
+        minute: "2-digit",
+        second: "2-digit",
+      })}
+    </div>
+  );
 }
 
 export default function App() {
@@ -32,10 +46,12 @@ export default function App() {
           <img src={reactLogo} className="logo react" alt="React logo" />
         </a>
       </div>
-      <h1>Happy Fourth Anniversary!</h1>
-      <h2>
-        <Clock />
-      </h2>
+      <div className="container">
+        <h1>
+          <Clock />
+        </h1>
+        <h2>Happy Fourth Anniversary!</h2>
+      </div>
       <div className="card">
         <p>
           Edit <code>src/App.tsx</code> and save to test HMR

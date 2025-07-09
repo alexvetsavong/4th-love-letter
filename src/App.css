@@ -50,6 +50,34 @@
   padding: 2em;
 }
 
+.container * {
+  display: flex;
+  justify-self: center;
+  justify-items: center;
+  justify-content: center;
+}
+
+.clock {
+  /* Display mode and positioning */
+  display: inherit !important;
+  vertical-align: middle;
+  
+  /* Sizing */
+  margin: 4px auto;
+  padding: 4px 32px;
+  width: fit-content;
+
+  /* Shape styling */
+  border-radius: 28px;
+  background: #313244;
+  border-color: #cba6f7;
+  border-style: solid;
+  /* Font styling */
+  font-family: "Doto";
+  font-weight: 700;
+
+}
+
 .read-the-docs {
   color: #888;
 }
