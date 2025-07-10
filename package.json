@@ -1,6 +1,6 @@
 {
   "name": "love-letter-app",
-  "homepage":"https://knadav-love-letter.netlify.app/",
+  "homepage": "https://knadav-love-letter.netlify.app/",
   "private": true,
   "version": "0.4.2",
   "type": "module",
