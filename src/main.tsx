@@ -1,5 +1,6 @@
-import { createRoot } from "react-dom/client";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
+import { createRoot } from "react-dom/client";
+
 import { Root, Letter } from "./pages/pages.tsx";
 
 import "./index.css";

@@ -21,3 +21,9 @@
     display: inherit;
     padding: 8px 4px;
 }
+
+.navbar ul li button:active{
+    display: inherit;
+    color: var(--theme-accent);
+    padding: 8px 4px;
+}

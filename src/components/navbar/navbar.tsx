@@ -1,4 +1,5 @@
 import "./navbar.css";
+import { NavLink } from "react-router-dom";
 
 const links = [
   { name: "Letter", url: "/letter" },
@@ -9,9 +10,9 @@ const links = [
 export default function Navbar() {
   const linkList = links.map((link) => (
     <li>
-      <a href={link.url}>
+      <NavLink to={link.url} end>
         <button>{link.name}</button>
-      </a>
+      </NavLink>
     </li>
   ));
 
