@@ -1,0 +1,38 @@
+.logo {
+  height: 12em;
+  width: auto;
+  padding: 3em 1.5em;
+  will-change: filter;
+  transition: filter 300ms;
+}
+
+.logo.duck:hover {
+  filter: drop-shadow(0 0 2em #ffffffaa);
+}
+
+@keyframes logo-jump {
+  0%,
+  100% {
+    transform: translateY(0em) rotate(0deg);
+  }
+  25% {
+    transform: translateY(-2em) rotate(-12deg);
+  }
+  75% {
+    transform: translateY(0.25em) rotate(15deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .logo.duck:hover {
+    animation: 500ms ease-out 0s infinite normal running logo-jump;
+  }
+}
+
+button.duck,
+button.duck:hover,
+button.duck:focus,
+button.duck:focus-visible {
+  background: transparent;
+  border-color: transparent;
+}

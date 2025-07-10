@@ -1,10 +1,20 @@
 @import "colors.css";
 @import "/fonts/fonts.css";
 
+html {
+  display: flex;
+  min-width: 100vw;
+  min-height: 100vh;
+  place-content: center;
+  place-items: center;
+}
+
 :root {
-  font-family: sans-serif;
+  place-items: center;
+
   line-height: 1.5;
   font-weight: 400;
+  font-family: sans-serif;
 
   color-scheme: light dark;
   color: var(--theme-text);
@@ -16,6 +26,31 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+@media (prefers-color-scheme: light) {
+  :root {
+    color: #213547;
+    background-color: #ffffff;
+  }
+  a:hover {
+    color: #747bff;
+  }
+  button {
+    background-color: #f9f9f9;
+  }
+}
+
+#root {
+  display: flex;
+  margin: 0 0 2em;
+}
+
+body {
+  display: flex;
+  min-width: 320px;
+  max-width: 80vw;
+  min-height: 100vh;
+}
+
 a {
   font-weight: 500;
   color: #646cff;
@@ -23,14 +58,6 @@ a {
 }
 a:hover {
   color: #535bf2;
-}
-
-body {
-  margin: 0;
-  /* display: flex; */
-  place-items: center;
-  min-width: 320px;
-  min-height: 100vh;
 }
 
 h1,
@@ -47,19 +74,23 @@ h2 {
 }
 
 button {
-  border-radius: 14px;
+  border-radius: 18px;
   border: 1px solid transparent;
-  padding: 0.6em 1.2em;
+  padding: 0.3em 0.6em;
   font-size: 1em;
   font-weight: 500;
   font-family: inherit;
-  background-color: #313244;
+  background-color: var(--theme-button-bg);
+  color: var(--theme-text);
   cursor: pointer;
-  transition: border-color 0.25s;
+  border-width: 1px;
+  transition: all 0.25s;
 }
+
 button:hover {
-  border-color: #89b4fa;
+  border-color: var(--theme-button-hover);
 }
+
 button:focus,
 button:focus-visible {
   outline: 4px auto -webkit-focus-ring-color;
@@ -73,15 +104,50 @@ button:focus-visible {
   max-height: 2em;
 }
 
-@media (prefers-color-scheme: light) {
-  :root {
-    color: #213547;
-    background-color: #ffffff;
-  }
-  a:hover {
-    color: #747bff;
-  }
-  button {
-    background-color: #f9f9f9;
-  }
+.container * {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  place-content: center;
+  place-items: center;
+  place-self: center;
+}
+
+.containerRow {
+  display: flex;
+  flex-direction: row;
+}
+
+.giphy-embed {
+  margin: 3em 8px;
+  border-radius: 28px;
+  border-style: none;
+}
+
+.emphasis {
+  display: inline-flex;
+  flex-direction: row;
+  white-space: pre-wrap;
+  font-style: italic !important;
+  font-weight: 700 !important;
+}
+
+.spoiler {
+  user-select: none;
+  display: flex;
+  color: transparent;
+  background-color: var(--theme-crust);
+  border-radius: 18px;
+  padding: 0 2em;
+  margin: 2em;
+  align-self: center;
+  text-align: center;
+  width: fit-content;
+  transition: all 250ms;
+}
+
+.spoiler:hover {
+  color: var(--theme-text);
+  background-color: transparent;
+  transition: all 250ms;
 }

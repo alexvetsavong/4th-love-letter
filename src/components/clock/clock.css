@@ -4,6 +4,7 @@
   /* Display mode and positioning */
   display: inherit !important;
   vertical-align: middle;
+  user-select: none;
 
   /* Sizing */
   margin: 4px auto;
@@ -14,9 +15,18 @@
   border-radius: 28px;
   background: var(--theme-overlay);
   border-color: var(--theme-accent);
+  border-width: 6px;
   border-style: solid;
-
+  
   /* Font styling */
+  font-size: 4em;
   font-family: "Doto" !important;
   font-weight: 700;
+  transition: all 250ms;
 }
+
+.clock:hover {
+  border-color: var(--theme-button-hover);
+  transition: all 250ms;
+}
+

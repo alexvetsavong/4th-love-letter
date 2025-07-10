@@ -1,4 +1,9 @@
+/*************************************
+ * Color theme declorations for vars *
+ *************************************/
 :root {
+  --theme-button-hover: #f38ba8;
+  --theme-button-bg: #313244;
   --theme-accent: #fab387;
   --theme-text: #cdd6f4;
   --theme-dimtext: #bac2de;

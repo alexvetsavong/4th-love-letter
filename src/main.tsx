@@ -1,17 +1,16 @@
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import { createRoot } from "react-dom/client";
 
-import { Root, Letter } from "./pages/pages.tsx";
-
+import { App } from "./pages/pages.tsx";
 import "./index.css";
 
 const router = createBrowserRouter([
-  {
-    path: "/",
-    Component: Root,
-  },
-  { path: "/letter", Component: Letter },
-  { path: "/joke", Component: Letter },
+  { path: "/", Component: App },
+  { path: "/letter", Component: App },
+  { path: "/joke", Component: App },
 ]);
 
-createRoot(document.getElementById("root")!).render(<RouterProvider router={router} />);
+const provider = <RouterProvider router={router} />;
+
+let root = createRoot(document.getElementById("root")!);
+root.render(provider);

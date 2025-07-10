@@ -17,11 +17,10 @@ export default function Navbar() {
   ));
 
   return (
-    <>
+    <div className="containerRow">
       <div className="navbar">
         <ul>{linkList}</ul>
       </div>
-      <div className="spacer"></div>
-    </>
+    </div>
   );
 }
