@@ -1,0 +1,32 @@
+@font-face {
+  font-family: "Doto";
+  src: url("/fonts/Doto.ttf"), local("Doto.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: monospace;
+  font-style: normal;
+  src: url("/fonts/AtkinsonHyperlegibleMono.ttf"),
+    local("AtkinsonHyperlegibleMono.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: monospace;
+  font-style: italic;
+  src: url("/fonts/AtkinsonHyperlegibleMono-Italic.ttf"),
+    local("AtkinsonHyperlegibleMono-Italic.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: sans-serif;
+  font-style: normal;
+  src: url("/fonts/AtkinsonHyperlegibleNext.ttf"),
+    local("AtkinsonHyperlegibleNext.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: sans-serif;
+  font-style: italic;
+  src: url("/fonts/AtkinsonHyperlegibleNext-Italic.ttf"),
+    local("AtkinsonHyperlegibleNext-Italic.ttf") format("truetype");
+}

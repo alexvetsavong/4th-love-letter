@@ -1,0 +1,22 @@
+@import "../../colors.css";
+
+.clock {
+  /* Display mode and positioning */
+  display: inherit !important;
+  vertical-align: middle;
+
+  /* Sizing */
+  margin: 4px auto;
+  padding: 4px 32px;
+  width: fit-content;
+
+  /* Shape styling */
+  border-radius: 28px;
+  background: var(--theme-overlay);
+  border-color: var(--theme-accent);
+  border-style: solid;
+
+  /* Font styling */
+  font-family: "Doto" !important;
+  font-weight: 700;
+}

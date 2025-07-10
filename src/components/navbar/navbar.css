@@ -1,0 +1,23 @@
+@import url("../../colors.css");
+
+.navbar {
+    display: flex !important;
+    justify-content: center !important;
+    justify-items: center !important;
+    vertical-align: middle;
+    border-radius: 28px;
+    color: var(--theme-overlay);
+    background: var(--theme-mantle);
+}
+
+.navbar ul {
+    display: inherit;
+    flex-direction: row;
+    padding: 4px 2px;
+    margin: 0;
+}
+
+.navbar ul li{
+    display: inherit;
+    padding: 8px 4px;
+}

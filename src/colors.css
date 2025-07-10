@@ -1,0 +1,11 @@
+:root {
+  --theme-accent: #fab387;
+  --theme-text: #cdd6f4;
+  --theme-dimtext: #bac2de;
+  --theme-dimmertext: #a6adc8;
+  --theme-lightoverlay: #45475a;
+  --theme-overlay: #313244;
+  --theme-base: #1e1e2e;
+  --theme-mantle: #181825;
+  --theme-crust: #11111b;
+}
