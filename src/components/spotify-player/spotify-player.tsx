@@ -50,7 +50,7 @@ export function SpotifyWebPlayer() {
           setPlayerLoaded(true);
         });
 
-        const handlePlaybackUpdate = (e) => {
+        const handlePlaybackUpdate = (e: any) => {
           const { position, duration, isBuffering, isPaused, playingURI } =
             e.data;
           console.log(
@@ -69,7 +69,7 @@ export function SpotifyWebPlayer() {
           handlePlaybackUpdate
         );
 
-        spotifyEmbedController.addListener("playback_started", (e) => {
+        spotifyEmbedController.addListener("playback_started", (e: any) => {
           const { playingURI } = e.data;
           console.log(`The playback has started for: ${playingURI}`);
         });
