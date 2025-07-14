@@ -1,6 +1,7 @@
 import Home from "../components/home/home.tsx";
 import Navbar from "../components/navbar/navbar.tsx";
-import SpotifyPlayer from "../components/spotify-player/spotify-player.tsx";
+// import SpotifyPlayer from "../components/spotify-player/spotify-player.tsx";
+import { SpotifyWebPlayer } from "../components/spotify-player/spotify-player.tsx";
 import { useLocation } from "react-router-dom";
 
 /***************************
@@ -88,7 +89,8 @@ export function App() {
     <div className="container">
       <Navbar />
       {component}
-      <SpotifyPlayer />
+      {/* <SpotifyPlayer /> */}
+      <SpotifyWebPlayer />
     </div>
   );
 }
