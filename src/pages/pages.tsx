@@ -40,9 +40,9 @@ const letter = (
       new restaurants; to cotton candy clouds over vermillion sunsetse on the
       beach horizon; and to the infinitely little moments of laughter followed
       by comfortable silence.
-      <p className="containerRow">
+      <div className="containerRow">
         Now check <span className="emphasis"> this </span> out:
-      </p>
+      </div>
       <iframe
         src="https://giphy.com/embed/KvES8uAj11XeyhurG2"
         width="256"

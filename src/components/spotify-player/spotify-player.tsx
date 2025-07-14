@@ -1,10 +1,16 @@
 import "./spotify-player.css";
 import { useRef, useState, useEffect } from "react";
 
+declare global {
+  interface Window {
+    onSpotifyIframeApiReady: (IFrameAPI: any) => void; // You can define a more specific type for IFrameAPI if available.
+  }
+}
+
 export function SpotifyWebPlayer() {
   const embedRef = useRef(null);
-  const spotifyEmbedControllerRef = useRef(null);
-  const [iFrameAPI, setIFrameAPI] = useState(undefined);
+  const spotifyEmbedControllerRef: any = useRef(null);
+  const [iFrameAPI, setIFrameAPI] = useState<any>(undefined);
   const [playerLoaded, setPlayerLoaded] = useState(false);
   const uri = "spotify:playlist:1wuBX0X1V08tL1oMVF0qyu";
 
@@ -32,7 +38,6 @@ export function SpotifyWebPlayer() {
     if (playerLoaded || iFrameAPI === undefined) {
       return;
     }
-
     iFrameAPI.createController(
       embedRef.current,
       {
