@@ -45,7 +45,7 @@ export function SpotifyWebPlayer() {
         height: "352",
         uri: uri,
       },
-      (spotifyEmbedController) => {
+      (spotifyEmbedController: any) => {
         spotifyEmbedController.addListener("ready", () => {
           setPlayerLoaded(true);
         });
