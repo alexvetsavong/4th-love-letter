@@ -10,6 +10,12 @@
   filter: drop-shadow(0 0 2em #ffffffaa);
 }
 
+@media (prefers-color-scheme: light) {
+  .logo.duck:hover {
+    filter: drop-shadow(0 0 2em var(--flamingo));
+  }
+}
+
 @keyframes logo-jump {
   0%,
   100% {

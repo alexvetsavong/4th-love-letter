@@ -26,19 +26,6 @@ html {
   -moz-osx-font-smoothing: grayscale;
 }
 
-@media (prefers-color-scheme: light) {
-  :root {
-    color: #213547;
-    background-color: #ffffff;
-  }
-  a:hover {
-    color: #747bff;
-  }
-  button {
-    background-color: #f9f9f9;
-  }
-}
-
 #root {
   display: flex;
   margin: 0 0 2em;
@@ -65,12 +52,21 @@ h2 {
   line-height: 1.1;
 }
 
-h1 {
-  font-size: 3.2em;
+@media screen and (width <= 393px) {
+  h1 {
+    font-size: 2.4em;
+  }
+  h2 {
+    font-size: 1.6em;
+  }
 }
-
-h2 {
-  font-size: 2.4em;
+@media screen and (width > 393px) {
+  h1 {
+    font-size: 3.2em;
+  }
+  h2 {
+    font-size: 2.4em;
+  }
 }
 
 button {

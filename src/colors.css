@@ -1,16 +1,50 @@
 /*************************************
  * Color theme declorations for vars *
  *************************************/
-:root {
-  --theme-button-hover: #f38ba8;
-  --theme-button-bg: #313244;
-  --theme-accent: #fab387;
-  --theme-text: #cdd6f4;
-  --theme-dimtext: #bac2de;
-  --theme-dimmertext: #a6adc8;
-  --theme-lightoverlay: #45475a;
-  --theme-overlay: #313244;
-  --theme-base: #1e1e2e;
-  --theme-mantle: #181825;
-  --theme-crust: #11111b;
+@media (prefers-color-scheme: dark) {
+  :root {
+    --flamingo: #f2cdcd;
+    --mauve: #cba6f7;
+    --peach: #fab387;
+    --rosewater: #f5e0dc;
+    --sapphire: #74c7ec;
+    --theme-button-hover: #f38ba8;
+    --theme-button-bg: #313244;
+    --theme-accent: #fab387;
+    --theme-text: #cdd6f4;
+    --theme-dimtext: #bac2de;
+    --theme-dimmertext: #a6adc8;
+    --theme-lightoverlay: #45475a;
+    --theme-overlay: #313244;
+    --theme-base: #1e1e2e;
+    --theme-mantle: #181825;
+    --theme-crust: #11111b;
+  }
+  a:hover {
+    color: #b4befe;
+  }
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    --flamingo: #dd7878;
+    --mauve: #8839ef;
+    --peach: #fe640b;
+    --rosewater: #dc8a78;
+    --sapphire: #209fb5;
+    --theme-button-hover: #dd7878;
+    --theme-button-bg: #ccd0da;
+    --theme-accent: #dc8a78;
+    --theme-text: #4c4f69;
+    --theme-dimtext: #5c5f77;
+    --theme-dimmertext: #6c6f85;
+    --theme-lightoverlay: #9ca0b0;
+    --theme-overlay: #8c8fa1;
+    --theme-base: #eff1f5;
+    --theme-mantle: #e6e9ef;
+    --theme-crust: #dce0e8;
+  }
+  a:hover {
+    color: #7287fd;
+  }
 }

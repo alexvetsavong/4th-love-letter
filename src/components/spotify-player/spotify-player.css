@@ -1,3 +1,17 @@
+@media screen and (width <= 393px) {
+    .spotify-player {
+        height: 420px;
+        width: 100%
+    }
+}
+
+@media screen and (width > 393px) {
+    .spotify-player {
+        height: 420px;
+        width: 100%
+    }
+}
+
 .spotify-player {
     display: flex;
     border-radius: 18px;
