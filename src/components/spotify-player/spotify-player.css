@@ -1,18 +1,18 @@
 @media screen and (width <= 393px) {
-    .spotify-player {
+    iframe:not(.giphy-embed) {
         height: 420px;
         width: 100%
     }
 }
 
 @media screen and (width > 393px) {
-    .spotify-player {
+    iframe:not(.giphy-embed) {
         height: 420px;
         width: 100%
     }
 }
 
-.spotify-player {
+iframe:not(.giphy-embed) {
     display: flex;
     border-radius: 18px;
     border-style: none;
