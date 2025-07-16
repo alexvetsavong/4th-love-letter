@@ -156,7 +156,7 @@ button.joke-button {
 }
 
 .spacer {
-  width:100%;
+  width: 100%;
   margin: 3em 0;
 }
 
@@ -167,9 +167,6 @@ button.joke-button {
   h2 {
     font-size: 1.5em;
   }
-  p {
-    font-size: 1.2em;
-  }
   h3 {
     font-size: 1.3em;
   }
@@ -179,7 +176,9 @@ button.joke-button {
   button:not(.duck, .joke-button) {
     font-size: 1em;
   }
-
+  p {
+    font-size: 1.1em;
+  }
   button.joke-button {
     font-size: 1.15em;
   }
@@ -223,7 +222,7 @@ button.joke-button {
     font-size: 1.75em;
   }
   h4 {
-    font-size:1.5em;
+    font-size: 1.5em;
   }
   button:not(.duck) {
     font-size: 1.3em;
