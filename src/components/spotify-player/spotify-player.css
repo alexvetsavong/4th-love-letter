@@ -1,25 +1,11 @@
 @import url("../../colors.css");
 
-/* @media screen and (width <= 428px) {
-  iframe:not(.giphy-embed) {
-    height: 152px;
-    width: 100%;
-  }
-}
-
-@media screen and (width > 428px) {
-  iframe:not(.giphy-embed) {
-    height: 420px;
-    width: 100%;
-  }
-} */
-
-iframe:not(.giphy-embed) {
+.spotify-player, iframe:not(.giphy-embed) {
+  position: fixed;
+  bottom: 0;
   margin: 0;
   width: 100%;
-  height: 152px;
-  position: fixed;
-  bottom: 0px;
-  border-radius: 28px 28px 14px 14px;
-  border-style: none;
+  height: var(--player-height);
+  border: 1px solid transparent;
+  border-radius: 18px;
 }

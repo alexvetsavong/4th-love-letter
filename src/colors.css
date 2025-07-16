@@ -1,6 +1,16 @@
 /*************************************
- * Color theme declorations for vars *
+ * Color theme declarations for vars *
  *************************************/
+:root {
+  --player-height: 152px;
+}
+
+@media screen and (width > 1280px) {
+  :root {
+    --player-height: 420px;
+  }
+}
+
 @media (prefers-color-scheme: dark) {
   :root {
     --flamingo: #f2cdcd;

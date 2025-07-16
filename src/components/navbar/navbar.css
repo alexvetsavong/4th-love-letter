@@ -5,7 +5,7 @@
   position: sticky;
   z-index: 1;
   top: 0px;
-  height: 3.3em !important;
+  height: 5em;
   width: 100vw !important;
   justify-content: center !important;
   justify-items: center !important;
@@ -13,6 +13,12 @@
   border-radius: 0px 0px 14px 14px;
   color: var(--theme-overlay);
   background: var(--theme-crust);
+}
+
+@media screen and (390px <= width <= 428px) {
+  .navbar {
+    height: 3.25em;
+  }
 }
 
 .navbar ul {
@@ -27,5 +33,5 @@
   user-select: none;
   display: inline-flex;
   text-decoration: none;
-  margin: 4px 4px;
+  margin: 0 0.5em;
 }

@@ -2,9 +2,9 @@ import "./navbar.css";
 import { NavLink } from "react-router-dom";
 
 const links = [
-  { name: "Letter", url: "/letter" },
-  { name: "Home", url: "/" },
-  { name: "Joke", url: "/joke" },
+  { name: "LETTER", url: "/letter" },
+  { name: "HOME", url: "/" },
+  { name: "JOKE", url: "/joke" },
 ];
 
 export default function Navbar() {

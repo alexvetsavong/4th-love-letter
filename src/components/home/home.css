@@ -1,12 +1,24 @@
-@media screen and (width<=393px) {
+@media screen and (390px <= width <= 428px) {
+  .logo {
+    height: 160px;
+  }
+}
+
+@media screen and (428px < width < 1280px) {
   .logo {
     height: 192px;
   }
 }
 
-@media screen and (width>393px) {
+@media screen and (1280px <= width < 1920px) {
   .logo {
-    height: 192px;
+    height: 224px;
+  }
+}
+
+@media screen and (1920px <= width) {
+  .logo {
+    height: 256px;
   }
 }
 
@@ -17,11 +29,13 @@
   transition: filter 300ms;
 }
 
+.logo.duck:hover,
 .logo.duck:hover {
   filter: drop-shadow(0 0 2em #ffffffaa);
 }
 
 @media (prefers-color-scheme: light) {
+  .logo.duck:hover,
   .logo.duck:hover {
     filter: drop-shadow(0 0 2em var(--flamingo));
   }
@@ -40,8 +54,9 @@
   }
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .logo.duck:hover {
+@media (prefers-reduced-motion: no-preference) and (hover: hover) and (pointer: fine) {
+  .logo.duck:hover,
+  logo.duck:focus {
     animation: 500ms ease-out 0s infinite normal running logo-jump;
   }
 }

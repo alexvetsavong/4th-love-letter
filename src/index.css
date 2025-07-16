@@ -39,7 +39,6 @@ html {
   flex-direction: column;
   place-items: center;
   place-content: center;
-  margin: 0 0 152px;
 }
 
 @media screen and (width > 428px) {
@@ -61,26 +60,16 @@ p {
   line-height: 1.15;
 }
 
-h1 {
-  font-size: 2.2em;
-}
-h2 {
-  font-size: 1.4em;
-}
-p {
-  font-size: 1.1em;
-}
-
 button:not(.duck) {
-  border-radius: 18px;
   border: 1px solid transparent;
-  padding: 0.3em 0.6em;
-  font-size: 1.1em;
-  font-weight: 500;
-  font-family: inherit;
-  background-color: var(--theme-button-bg);
+  border-radius: 28px;
+
   color: var(--theme-text);
+  background-color: var(--theme-button-bg);
+
   cursor: pointer;
+  font-family: "Atkinson Hyperlegible Mono";
+  font-weight: 700;
   transition: all 0.3s;
 }
 
@@ -90,9 +79,22 @@ button:not(.duck):hover {
   border-color: var(--theme-border-hover);
 }
 
-button:not(.duck):focus,
-button:not(.duck):focus-visible {
+button:not(.duck, .joke-button),
+button:not(.duck, .joke-button):hover {
+  padding: 0.3em 0.6em;
+}
+
+button:not(.duck, .joke-button):focus,
+button:not(.duck, .joke-button):focus-visible {
   outline: 4px auto -webkit-focus-ring-color;
+}
+
+button.joke-button {
+  position: fixed;
+  bottom: calc(var(--player-height) + 3em);
+  border-radius: 28px;
+  padding: 0 1em;
+  height: 3em;
 }
 
 .container,
@@ -146,6 +148,10 @@ button:not(.duck):focus-visible {
   transition: all 250ms;
 }
 
+.wrapper {
+  padding: 0 0 var(--player-height);
+}
+
 @media screen and (390px <= width <= 428px) {
   h1 {
     font-size: 2.4em;
@@ -156,38 +162,54 @@ button:not(.duck):focus-visible {
   p {
     font-size: 1.2em;
   }
-  button:not(.duck) {
+  button:not(.duck, .joke-button) {
     font-size: 1em;
   }
+
+  button.joke-button {
+    font-size: 1.2em;
+  }
+
   .giphy-embed {
     width: 256px;
     height: 256px;
   }
-  .wrapper {
-    margin: 0 0 152px;
-  }
 }
 
-@media screen and (428px < width < 1080px) {
-  .wrapper {
-    margin: 0 0 152px;
-  }
+@media screen and (428px < width <= 1280px) {
   h1 {
-    font-size: 3.2em;
+    font-size: 3em;
   }
   h2 {
-    font-size: 2.4em;
+    font-size: 2em;
   }
-  p {
+  button:not(.duck, .joke-button) {
+    font-size: 1.2em;
+  }
+  p,
+  button.joke-button {
     font-size: 1.3em;
   }
 }
 
-@media screen and (width > 1080px) {
-  .wrapper {
-    margin: 0 0 152px;
+@media screen and (width > 1280px) {
+  h1 {
+    font-size: 3.5em;
+  }
+  h2 {
+    font-size: 2.5em;
+  }
+  h3 {
+    font-size: 2em;
+  }
+  h4 {
+    font-size: 1.75em;
   }
   button:not(.duck) {
-    font-size: 1.2em;
+    font-size: 1.3em;
+  }
+  p,
+  button.joke-button {
+    font-size: 1.5em;
   }
 }
