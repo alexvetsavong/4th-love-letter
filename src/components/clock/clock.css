@@ -1,17 +1,17 @@
 @import "../../colors.css";
-@media screen and (width <= 393px) {
+@media screen and (width <= 428px) {
   .clock {
-    font-size: 2em;
+    font-size: 2.5em;
   }
 }
 
-@media screen and (393px < width <= 768px) {
+@media screen and (428px < width <= 960px) {
   .clock {
     font-size: 3em;
   }
 }
 
-@media screen and (768px < width) {
+@media screen and (960px < width) {
   .clock {
     font-size: 4em;
   }
@@ -31,7 +31,7 @@
   /* Shape styling */
   border-radius: 28px;
   color: var(--theme-text);
-  background: var(--theme-base);
+  background: var(--theme-surface-darker);
   border-color: var(--theme-accent);
   @media (prefers-color-scheme: light) {
     color: var(--theme-base);

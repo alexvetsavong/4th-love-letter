@@ -1,25 +1,31 @@
 @import url("../../colors.css");
 
 .navbar {
-    display: flex !important;
-    min-width: 90vw;
-    max-width: 90vw;
-    margin-bottom: 3em;
-    justify-content: center !important;
-    justify-items: center !important;
-    vertical-align: middle;
-    border-radius: 0px 0px 18px 18px;
-    color: var(--theme-overlay);
-    background: var(--theme-crust);
+  display: flex !important;
+  position: sticky;
+  z-index: 1;
+  top: 0px;
+  height: 3.3em !important;
+  width: 100vw !important;
+  justify-content: center !important;
+  justify-items: center !important;
+  justify-self: center !important;
+  border-radius: 0px 0px 14px 14px;
+  color: var(--theme-overlay);
+  background: var(--theme-crust);
 }
 
 .navbar ul {
-    display: inherit;
-    flex-direction: row;
-    padding: 4px 2px;
+  user-select: none;
+  display: flex;
+  padding: 0;
+  place-items: center;
+  place-content: center;
 }
 
-.navbar ul li{
-    display: inherit;
-    margin: 4px 4px;
+.navbar ul li {
+  user-select: none;
+  display: inline-flex;
+  text-decoration: none;
+  margin: 4px 4px;
 }

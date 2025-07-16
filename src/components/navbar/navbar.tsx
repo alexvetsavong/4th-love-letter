@@ -9,18 +9,16 @@ const links = [
 
 export default function Navbar() {
   const linkList = links.map((link) => (
-    <li key={link.name}>
+    <li key={link.name} tabIndex={-1}>
       <NavLink to={link.url} end>
-        <button>{link.name}</button>
+        <button tabIndex={-1}>{link.name}</button>
       </NavLink>
     </li>
   ));
 
   return (
-    <div className="containerRow">
-      <div className="navbar">
-        <ul>{linkList}</ul>
-      </div>
+    <div className="navbar">
+      <ul>{linkList}</ul>
     </div>
   );
 }

@@ -50,6 +50,7 @@ button.duck,
 button.duck:hover,
 button.duck:focus,
 button.duck:focus-visible {
+  display: flex;
   background: transparent !important;
   border-color: transparent !important;
 }
