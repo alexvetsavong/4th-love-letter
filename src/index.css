@@ -109,9 +109,18 @@ button:not(.duck):focus-visible {
 }
 
 .giphy-embed {
+  width: 384px;
+  height: 384px;
   margin: 3em 8px;
   border-radius: 28px;
   border-style: none;
+}
+
+@media screen and (width<=393px) {
+  .giphy-embed {
+    width: 256px;
+    height: 256px;
+  }
 }
 
 .emphasis {
