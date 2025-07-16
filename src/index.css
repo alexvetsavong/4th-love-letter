@@ -68,7 +68,7 @@ button:not(.duck) {
   background-color: var(--theme-button-bg);
 
   cursor: pointer;
-  font-family: "Atkinson Hyperlegible Mono";
+  font-family: monospace;
   font-weight: 700;
   transition: all 0.3s;
 }
