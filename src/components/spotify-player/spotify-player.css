@@ -1,11 +1,28 @@
 @import url("../../colors.css");
 
-.spotify-player, iframe:not(.giphy-embed) {
+.spotify-player,.blur, iframe:not(.giphy-embed) {
+  display: flex;
+  place-content: center;
+  place-items: center;
+  place-self: center;
   position: fixed;
-  bottom: 0;
+  bottom: 8px;
   margin: 0;
-  width: 100%;
+  width: 95dvw;
+  border-radius: 28px;
+}
+
+.spotify-player, iframe:not(.giphy-embed) {
+  border: 8px solid transparent;
   height: var(--player-height);
-  border: 1px solid transparent;
-  border-radius: 18px;
+  z-index: 1;
+}
+
+.blur {
+  z-index: 0;
+  bottom: 0px;
+  will-change: filter;
+  background-color: var(--theme-base);
+  height: calc(var(--player-height) + 2.5dvh);
+  filter: opacity(80%) blur(2.5dvh);
 }

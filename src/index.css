@@ -134,11 +134,13 @@ button.joke-button {
   color: transparent;
   background-color: var(--theme-crust);
   border-radius: 18px;
-  padding: 0 2em;
-  margin: 2em;
-  align-self: center;
+  padding: 0 1em;
+  place-content: center;
   text-align: center;
+  height: fit-content;
   width: fit-content;
+  min-height: 3em;
+  min-width: 80dvw;
   transition: all 250ms;
 }
 
@@ -149,25 +151,36 @@ button.joke-button {
 }
 
 .wrapper {
-  padding: 0 0 var(--player-height);
+  padding: 0 0 calc(var(--player-height) + 36px);
+}
+
+.spacer {
+  width:100%;
+  margin: 3em 0;
 }
 
 @media screen and (390px <= width <= 428px) {
   h1 {
-    font-size: 2.4em;
+    font-size: 2.2em;
   }
   h2 {
-    font-size: 1.6em;
+    font-size: 1.5em;
   }
   p {
     font-size: 1.2em;
+  }
+  h3 {
+    font-size: 1.3em;
+  }
+  h4 {
+    font-size: 1.1em;
   }
   button:not(.duck, .joke-button) {
     font-size: 1em;
   }
 
   button.joke-button {
-    font-size: 1.2em;
+    font-size: 1.15em;
   }
 
   .giphy-embed {
@@ -178,38 +191,44 @@ button.joke-button {
 
 @media screen and (428px < width <= 1280px) {
   h1 {
-    font-size: 3em;
+    font-size: 2.25em;
   }
   h2 {
-    font-size: 2em;
+    font-size: 1.75em;
+  }
+  h3 {
+    font-size: 1.5em;
+  }
+  h4 {
+    font-size: 1.3em;
   }
   button:not(.duck, .joke-button) {
     font-size: 1.2em;
   }
   p,
   button.joke-button {
-    font-size: 1.3em;
+    font-size: 1.2em;
   }
 }
 
 @media screen and (width > 1280px) {
   h1 {
-    font-size: 3.5em;
-  }
-  h2 {
     font-size: 2.5em;
   }
-  h3 {
+  h2 {
     font-size: 2em;
   }
-  h4 {
+  h3 {
     font-size: 1.75em;
+  }
+  h4 {
+    font-size:1.5em;
   }
   button:not(.duck) {
     font-size: 1.3em;
   }
   p,
   button.joke-button {
-    font-size: 1.5em;
+    font-size: 1.3em;
   }
 }

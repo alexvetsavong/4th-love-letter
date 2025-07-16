@@ -90,6 +90,7 @@ export function SpotifyWebPlayer() {
       <div className="spotify-player">
         <div ref={embedRef}></div>
       </div>
+      <div className="blur"></div>
     </>
   );
 }
