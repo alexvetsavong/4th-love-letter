@@ -90,9 +90,10 @@ button:not(.duck, .joke-button):focus-visible {
 }
 
 button.joke-button {
-  position: fixed;
-  bottom: calc(var(--player-height) + 3em);
+  /* position: fixed;
+  bottom: calc(var(--player-height) + 3em); */
   border-radius: 28px;
+  margin: 6em;
   padding: 0 1em;
   height: 3em;
 }
