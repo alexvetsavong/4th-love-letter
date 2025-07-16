@@ -9,7 +9,7 @@ const links = [
 
 export default function Navbar() {
   const linkList = links.map((link) => (
-    <li>
+    <li key={link.name}>
       <NavLink to={link.url} end>
         <button>{link.name}</button>
       </NavLink>

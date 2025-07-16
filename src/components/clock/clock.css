@@ -48,6 +48,6 @@
 }
 
 .clock:hover {
-  border-color: var(--theme-button-hover);
+  border-color: var(--theme-border-hover);
   transition: all 250ms;
 }

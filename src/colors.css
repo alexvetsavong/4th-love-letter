@@ -4,13 +4,16 @@
 @media (prefers-color-scheme: dark) {
   :root {
     --flamingo: #f2cdcd;
+    --green: #e0f2cd;
     --mauve: #cba6f7;
     --peach: #fab387;
     --rosewater: #f5e0dc;
     --sapphire: #74c7ec;
-    --theme-button-hover: #f38ba8;
-    --theme-button-bg: #313244;
-    --theme-accent: #fab387;
+    --theme-border-hover: var(--green);
+    --theme-button-hover: var(--flamingo);
+    --theme-button-bg: var(--theme-overlay);
+    --theme-button-text: var(--theme-base);
+    --theme-accent: var(--peach);
     --theme-text: #cdd6f4;
     --theme-dimtext: #bac2de;
     --theme-dimmertext: #a6adc8;
@@ -18,33 +21,34 @@
     --theme-overlay: #313244;
     --theme-base: #1e1e2e;
     --theme-mantle: #181825;
-    --theme-crust: #11111b;
-  }
-  a:hover {
-    color: #b4befe;
+    --theme-crust: #181825;
   }
 }
 
 @media (prefers-color-scheme: light) {
   :root {
     --flamingo: #dd7878;
+    --green: #abdd78;
     --mauve: #8839ef;
     --peach: #fe640b;
     --rosewater: #dc8a78;
     --sapphire: #209fb5;
-    --theme-button-hover: #dd7878;
-    --theme-button-bg: #ccd0da;
-    --theme-accent: #dc8a78;
+    --theme-border-hover: var(--green);
+    --theme-button-hover: var(--flamingo);
+    --theme-button-bg: var(--theme-surface-darker);
+    --theme-button-text: var(--theme-text);
+    --theme-accent: var(--rosewater);
     --theme-text: #4c4f69;
     --theme-dimtext: #5c5f77;
     --theme-dimmertext: #6c6f85;
-    --theme-lightoverlay: #9ca0b0;
-    --theme-overlay: #8c8fa1;
+    --theme-overlay: #9ca0b0;
+    --theme-overlay-dark: #8c8fa1;
+    --theme-overlay-darker: #7c7f93;
+    --theme-surface: #ccd0da;
+    --theme-surface-dark: #bcc0cc;
+    --theme-surface-darker: #acb0be;
     --theme-base: #eff1f5;
     --theme-mantle: #e6e9ef;
     --theme-crust: #dce0e8;
-  }
-  a:hover {
-    color: #7287fd;
   }
 }

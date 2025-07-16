@@ -1,19 +1,21 @@
+@import url("../../colors.css");
+
 @media screen and (width <= 393px) {
-    iframe:not(.giphy-embed) {
-        height: 420px;
-        width: 100%
-    }
+  iframe:not(.giphy-embed) {
+    height: 420px;
+    width: 100%;
+  }
 }
 
 @media screen and (width > 393px) {
-    iframe:not(.giphy-embed) {
-        height: 420px;
-        width: 100%
-    }
+  iframe:not(.giphy-embed) {
+    height: 420px;
+    width: 100%;
+  }
 }
 
 iframe:not(.giphy-embed) {
-    display: flex;
-    border-radius: 18px;
-    border-style: none;
+  margin-top: 6em;
+  border-radius: 18px 18px 18px 18px;
+  border-style: none;
 }

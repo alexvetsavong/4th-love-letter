@@ -42,7 +42,7 @@ export function SpotifyWebPlayer() {
       embedRef.current,
       {
         width: "100%",
-        height: "352",
+        height: "420",
         uri: uri,
       },
       (spotifyEmbedController: any) => {
@@ -51,8 +51,7 @@ export function SpotifyWebPlayer() {
         });
 
         const handlePlaybackUpdate = (e: any) => {
-          const { position, duration, isBuffering, isPaused, playingURI } =
-            e.data;
+          const { position, duration, isBuffering, isPaused, playingURI } = e.data;
           console.log(
             `Playback State updates:
               position - ${position},
@@ -64,10 +63,7 @@ export function SpotifyWebPlayer() {
           );
         };
 
-        spotifyEmbedController.addListener(
-          "playback_update",
-          handlePlaybackUpdate
-        );
+        spotifyEmbedController.addListener("playback_update", handlePlaybackUpdate);
 
         spotifyEmbedController.addListener("playback_started", (e: any) => {
           const { playingURI } = e.data;
@@ -86,8 +82,8 @@ export function SpotifyWebPlayer() {
   }, [playerLoaded, iFrameAPI, uri]);
 
   return (
-    <div className="container">
-      <div className="spotify-player" ref={embedRef} />
+    <div className="spotify-player" >
+      <div ref={embedRef}></div>
     </div>
   );
 }

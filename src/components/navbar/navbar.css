@@ -2,20 +2,21 @@
 
 .navbar {
     display: flex !important;
-    min-width: 80vw;
+    min-width: 90vw;
+    max-width: 90vw;
+    margin-bottom: 3em;
     justify-content: center !important;
     justify-items: center !important;
     vertical-align: middle;
-    border-radius: 28px;
+    border-radius: 0px 0px 18px 18px;
     color: var(--theme-overlay);
-    background: var(--theme-mantle);
+    background: var(--theme-crust);
 }
 
 .navbar ul {
     display: inherit;
     flex-direction: row;
     padding: 4px 2px;
-    margin: 0;
 }
 
 .navbar ul li{

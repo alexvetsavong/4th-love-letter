@@ -1,7 +1,18 @@
+@media screen and (width<=393px) {
+  .logo {
+    height: 192px;
+  }
+}
+
+@media screen and (width>393px) {
+  .logo {
+    height: 192px;
+  }
+}
+
 .logo {
-  height: 12em;
   width: auto;
-  padding: 3em 1.5em;
+  padding: 3em;
   will-change: filter;
   transition: filter 300ms;
 }
