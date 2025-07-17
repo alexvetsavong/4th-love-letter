@@ -7,8 +7,10 @@ export default defineConfig({
   plugins: [
     react(),
     VitePWA({
+      mode: "production",
+      base: "/",
       registerType: "autoUpdate",
-      includeAssets: ["public/*"],
+      includeAssets: ["ico/*, fonts/*, logos/*"],
       manifest: {
         name: "Anniversary Love Letter",
         short_name: "LoveLetter",
@@ -19,23 +21,23 @@ export default defineConfig({
         display: "standalone",
         icons: [
           {
-            src: "/public/ico/rabbit-192x192.png",
+            src: "ico/rabbit-192x192.png",
             sizes: "192x192",
             type: "image/png",
           },
           {
-            src: "/public/ico/rabbit-512x512.png",
+            src: "ico/rabbit-512x512.png",
             sizes: "512x512",
             type: "image/png",
           },
           {
-            src: "/public/ico/rabbit-512x512.png",
+            src: "ico/rabbit-512x512.png",
             sizes: "512x512",
             type: "image/png",
             purpose: "any",
           },
           {
-            src: "/public/ico/rabbit-512x512.png",
+            src: "ico/rabbit-512x512.png",
             sizes: "512x512",
             type: "image/png",
             purpose: "maskable",

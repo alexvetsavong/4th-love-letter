@@ -1,29 +1,32 @@
 @media screen and (390px <= width <= 428px) {
   .logo {
     height: 160px;
+    width: 160px;
   }
 }
 
 @media screen and (428px < width < 1280px) {
   .logo {
     height: 192px;
+    width: 192px;
   }
 }
 
 @media screen and (1280px <= width < 1920px) {
   .logo {
     height: 224px;
+    width: 224px;
   }
 }
 
 @media screen and (1920px <= width) {
   .logo {
     height: 224px;
+    width: 224px;
   }
 }
 
 .logo {
-  width: auto;
   padding: 3em;
   will-change: filter;
   transition: filter 300ms;
@@ -63,9 +66,7 @@ button.duck:focus-visible {
   border-color: transparent !important;
 }
 
-@media screen and (hover: hover) {
-  .logo.duck:hover,
-  .logo.duck:focus {
-    animation: 500ms ease-out 0s infinite normal running logo-jump;
-  }
+.logo.duck:hover,
+.logo.duck:focus {
+  animation: 500ms ease-out 0s infinite normal running logo-jump;
 }
