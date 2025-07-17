@@ -54,13 +54,6 @@
   }
 }
 
-@media (prefers-reduced-motion: no-preference) and (hover: hover) and (pointer: fine) {
-  .logo.duck:hover,
-  logo.duck:focus {
-    animation: 500ms ease-out 0s infinite normal running logo-jump;
-  }
-}
-
 button.duck,
 button.duck:hover,
 button.duck:focus,
@@ -68,4 +61,11 @@ button.duck:focus-visible {
   display: flex;
   background: transparent !important;
   border-color: transparent !important;
+}
+
+@media screen and (hover: hover) {
+  .logo.duck:hover,
+  .logo.duck:focus {
+    animation: 500ms ease-out 0s infinite normal running logo-jump;
+  }
 }
