@@ -44,6 +44,7 @@ export default defineConfig({
           },
         ],
       },
+      injectRegister: "script",
       injectManifest: {
         globPatterns: ["**/*.{js,html,css,png,svg,ico}"],
       },
