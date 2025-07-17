@@ -8,27 +8,37 @@ export default defineConfig({
     react(),
     VitePWA({
       registerType: "autoUpdate",
-      includeAssets: ["public/fonts, public/logos"],
+      includeAssets: ["public/*"],
       manifest: {
-        name: "Fourth Year Anniversary Love Letter to Amie",
-        short_name: "Love Letter",
+        name: "Anniversary Love Letter",
+        short_name: "LoveLetter",
+        description:
+          "Fourth Year Anniversary Love Letter to Amie served via a Vite-bootstrapped PWA",
         start_url: "/",
+        theme_color: "#ffffff",
         display: "standalone",
         icons: [
           {
-            src: "/public/ico/rabbit.png",
+            src: "/public/ico/rabbit-192x192.png",
+            sizes: "192x192",
+            type: "image/png",
+          },
+          {
+            src: "/public/ico/rabbit-512x512.png",
             sizes: "512x512",
             type: "image/png",
           },
           {
-            src: "/public/ico/rabbit.png",
-            sizes: "256x256",
+            src: "/public/ico/rabbit-512x512.png",
+            sizes: "512x512",
             type: "image/png",
+            purpose: "any",
           },
           {
-            src: "/public/ico/rabbit.png",
-            sizes: "192x192",
+            src: "/public/ico/rabbit-512x512.png",
+            sizes: "512x512",
             type: "image/png",
+            purpose: "maskable",
           },
         ],
       },
